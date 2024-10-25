@@ -1,0 +1,108 @@
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+@media(max-width:992px){
+    .sectionHero{
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    .heroText{
+        padding-top: 0;
+
+        p{
+            font-size: 70%;
+        }
+
+    }
+
+    .heroImg{
+        text-align: center;
+
+        img{
+            width: 80%;
+            margin: 10% 0 0 10%;
+        }
+    }
+}
+
+@media (max-width: 767px){
+
+    .heroText{
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .heroImg{
+        img{
+            margin: 0;
+        }
+    }
+    
+    .sectionHero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .navList{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .heroImg{
+        img:hover{
+            width: 450px;
+            opacity: 0.6;
+        }
+    }
+    .redes{
+        i:hover{
+            --color: #0f6c91;
+            transform: translateY(-5px);
+        }
+    }
+    .heroText{
+        a:hover{
+            background-color: transparent;
+            border: 1px solid white;
+            transform: translateX(8px);
+            
+        }
+    }
+    .sectionContacto{
+        button:hover{
+            background-color: #035575;
+        }
+    }
+    .navList{
+        a:hover{
+            border-bottom: 5px solid white;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .burger-menu{
+        display: none;
+    }
+    
+}
