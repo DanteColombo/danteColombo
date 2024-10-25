@@ -1,0 +1,12 @@
+footer{
+    position: relative;
+
+    a{
+        position: absolute; 
+        right: 1%; 
+        bottom: 1%; 
+        padding: 10px 15px;
+        background-color: #2649a8; 
+        border-radius: 5px;
+    }
+}
